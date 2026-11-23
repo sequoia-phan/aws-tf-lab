@@ -1,0 +1,35 @@
+# Terraform working directory and providers
+.terraform/
+
+# State (can contain secrets) and backups
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Variable files (may contain secrets)
+*.tfvars
+*.tfvars.json
+!example.tfvars
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Saved plans
+*.tfplan
+tfplan
+
+# CLI config
+.terraformrc
+terraform.rc
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# NOTE: .terraform.lock.hcl is intentionally committed to pin provider versions.
